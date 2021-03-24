@@ -40,7 +40,7 @@ public class StudentController {
 	@GetMapping("/find/{id}")
 	public java.util.Optional<Student> getStudent(@PathVariable("id") String id) {
 		
-		return studentRepository.findById(id);
+		return studentRepository.findById(id) ;
 	
 	}
 	
